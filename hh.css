@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background: aliceblue;
+    padding: 15px 30px;
+}
+
+/* Conteneur principal */
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Liste de navigation */
+.navitem {
+    display: flex; /* Permet d'afficher les éléments en ligne */
+    gap: 20px; /* Espacement entre les liens */
+    list-style: none;
+}
+
+/* Liens */
+.navitem li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navitem li a:hover {
+    color: royalblue; /* Change la couleur au survol */
+}
+
+/* Bouton */
+button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff4500;
+}
+button a{
+    color: white;
+}
+section{
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh; /* Hauteur minimale de la vue (viewport height) */
+    display: flex;
+    align-items: center; /* Centre le contenu verticalement */
+    background: url(img/me1.png) no-repeat; /* Image de fond */
+    //background-size: cover; /* Couvre toute la zone */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed;
+}
+
+.socialicon {
+    display: flex; /* Affiche les icônes en ligne */
+    gap: 20px; /* Espacement entre les icônes */
+    justify-content: initial; /* Centre les icônes horizontalement */
+}
+
+.socialicon a {
+    color: #333; /* Couleur par défaut des icônes */
+    font-size: 24px; /* Taille des icônes */
+    transition: color 0.3s ease, transform 0.3s ease; /* Animation fluide */
+}
+
+.socialicon a:hover {
+    color: #0077b5; /* Couleur au survol (exemple pour LinkedIn) */
+    transform: scale(1.2); /* Agrandit légèrement l'icône au survol */
+}
+
+/* Couleurs personnalisées pour chaque icône */
+.socialicon a .fa-github:hover {
+    color: #000; /* Couleur GitHub au survol */
+}
+
+.socialicon a .fa-linkedin:hover {
+    color: #0077b5; /* Couleur LinkedIn au survol */
+}
+
+.socialicon a .fa-twitter:hover {
+    color: #1da1f2; /* Couleur Twitter au survol */
+}
+.main h2 {
+    font-size: 3rem; /* Taille du texte */
+    font-weight: bold; /* Gras */
+    margin-bottom: 10px; /* Espacement en dessous */
+}
+
+.main h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.main h4 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
