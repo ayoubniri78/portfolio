@@ -6,6 +6,22 @@
     text-decoration: none;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
 /* Navbar */
 .navbar {
     background: aliceblue;
@@ -28,8 +44,10 @@
 
 /* Liste de navigation */
 .navitem {
-    display: flex; /* Permet d'afficher les éléments en ligne */
-    gap: 20px; /* Espacement entre les liens */
+    display: flex;
+    /* Permet d'afficher les éléments en ligne */
+    gap: 20px;
+    /* Espacement entre les liens */
     list-style: none;
 }
 
@@ -42,7 +60,8 @@
 }
 
 .navitem li a:hover {
-    color: royalblue; /* Change la couleur au survol */
+    color: royalblue;
+    /* Change la couleur au survol */
 }
 
 /* Bouton */
@@ -60,56 +79,78 @@ button {
 button:hover {
     background: #ff4500;
 }
-button a{
+
+button a {
     color: white;
 }
-section{
+
+section {
     padding: 100px 200px;
 }
+
 .main {
     width: 100%;
-    min-height: 100vh; /* Hauteur minimale de la vue (viewport height) */
+    min-height: 100vh;
+    /* Hauteur minimale de la vue (viewport height) */
     display: flex;
-    align-items: center; /* Centre le contenu verticalement */
-    background: url(img/me1.png) no-repeat; /* Image de fond */
+    align-items: center;
+    /* Centre le contenu verticalement */
+    background: url(img/me1.png) no-repeat;
+    /* Image de fond */
     //background-size: cover; /* Couvre toute la zone */
-    background-position: center; /* Centre l'image */
+    background-position: center;
+    /* Centre l'image */
     background-attachment: fixed;
 }
 
 .socialicon {
-    display: flex; /* Affiche les icônes en ligne */
-    gap: 20px; /* Espacement entre les icônes */
-    justify-content: initial; /* Centre les icônes horizontalement */
+    display: flex;
+    /* Affiche les icônes en ligne */
+    gap: 20px;
+    /* Espacement entre les icônes */
+    justify-content: initial;
+    /* Centre les icônes horizontalement */
 }
 
 .socialicon a {
-    color: #333; /* Couleur par défaut des icônes */
-    font-size: 24px; /* Taille des icônes */
-    transition: color 0.3s ease, transform 0.3s ease; /* Animation fluide */
+    color: #333;
+    /* Couleur par défaut des icônes */
+    font-size: 24px;
+    /* Taille des icônes */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Animation fluide */
 }
 
 .socialicon a:hover {
-    color: #0077b5; /* Couleur au survol (exemple pour LinkedIn) */
-    transform: scale(1.2); /* Agrandit légèrement l'icône au survol */
+    color: #0077b5;
+    /* Couleur au survol (exemple pour LinkedIn) */
+    transform: scale(1.2);
+    /* Agrandit légèrement l'icône au survol */
 }
 
 /* Couleurs personnalisées pour chaque icône */
 .socialicon a .fa-github:hover {
-    color: #000; /* Couleur GitHub au survol */
+    color: #000;
+    /* Couleur GitHub au survol */
 }
 
 .socialicon a .fa-linkedin:hover {
-    color: #0077b5; /* Couleur LinkedIn au survol */
+    color: #0077b5;
+    /* Couleur LinkedIn au survol */
 }
 
 .socialicon a .fa-twitter:hover {
-    color: #1da1f2; /* Couleur Twitter au survol */
+    color: #1da1f2;
+    /* Couleur Twitter au survol */
 }
+
 .main h2 {
-    font-size: 3rem; /* Taille du texte */
-    font-weight: bold; /* Gras */
-    margin-bottom: 10px; /* Espacement en dessous */
+    font-size: 3rem;
+    /* Taille du texte */
+    font-weight: bold;
+    /* Gras */
+    margin-bottom: 10px;
+    /* Espacement en dessous */
 }
 
 .main h3 {
@@ -124,3 +165,232 @@ section{
     margin-bottom: 20px;
 }
 
+.cards .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+
+.card {
+    background-color: aliceblue;
+    border-radius: 10px;
+    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    padding: 20px;
+    width: 250px;
+    /* Largeur fixe pour chaque carte */
+    text-align: center;
+    /* Centrer le texte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animation au survol */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Légère élévation au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Ombre plus prononcée au survol */
+}
+
+.card i {
+    font-size: 8rem;
+    /* Taille de l'icône */
+    color: #007bff;
+    /* Couleur de l'icône */
+    margin-bottom: 15px;
+    /* Espace sous l'icône */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    /* Taille du titre */
+    margin-bottom: 10px;
+    /* Espace sous le titre */
+    color: #333;
+    /* Couleur du texte */
+}
+
+.card p {
+    font-size: 1rem;
+    /* Taille du paragraphe */
+    color: #666;
+    /* Couleur du texte */
+}
+
+/* Style for About Me Section */
+.about {
+    background-color: #f4f4f4;
+    /* Light grey background */
+    padding: 40px 20px;
+    /* Add padding around the section */
+    border-radius: 10px;
+    /* Rounded corners */
+    max-width: 800px;
+    /* Maximum width */
+    margin: 0 auto;
+    /* Center the section */
+
+}
+
+.about .title {
+    font-size: 36px;
+    /* Large font size for title */
+    color: #333;
+    /* Dark grey color for title */
+    text-align: center;
+    /* Center align the title */
+    margin-bottom: 40px;
+    /* Space between title and description */
+}
+
+.about .description {
+    font-size: 18px;
+    /* Medium font size for description */
+    line-height: 1.6;
+    /* Increase line height for readability */
+    color: #555;
+    /* Dark grey color for text */
+    text-align: justify;
+    /* Justify the text */
+    margin-bottom: 20px;
+    /* Space between text and other elements */
+}
+
+/* Style for the download button */
+.download-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #007bff;
+    width: auto;
+    /* Blue background */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Padding around the text */
+    border-radius: 5px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 18px;
+    /* Font size */
+    text-align: center;
+    /* Center text */
+    margin-top: 20px;
+    /* Add space above the button */
+    transition: background-color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.contact {
+    background-color: aliceblue;
+    border-radius: 10px;
+    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    padding: 20px;
+    width: 250px;
+    /* Largeur fixe pour chaque carte */
+    text-align: center;
+    /* Centrer le texte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animation au survol */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    /* Légère élévation au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Ombre plus prononcée au survol */
+}
+
+.contact i {
+    font-size: 8rem;
+    /* Taille de l'icône */
+    color: #007bff;
+    /* Couleur de l'icône */
+    margin-bottom: 15px;
+    /* Espace sous l'icône */
+}
+
+.contact p {
+    font-size: 1rem;
+    /* Taille du paragraphe */
+    color: #666;
+    /* Couleur du texte */
+}
+
+.about .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #333;
+    /* Dark background */
+    color: white;
+    /* White text */
+    padding: 20px 0;
+    /* Padding for top and bottom */
+    text-align: center;
+    /* Center the content */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1000px;
+    /* Max width for the content */
+    margin: 0 auto;
+    /* Center the content */
+}
+
+.footer p {
+    font-size: 16px;
+    /* Font size for the copyright */
+    margin: 10px 0;
+    /* Margin above and below */
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: white;
+    /* White text for icons */
+    margin: 0 15px;
+    /* Space between icons */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 18px;
+    /* Icon font size */
+    transition: color 0.3s ease;
+    /* Smooth transition */
+}
+
+.social-icon:hover {
+    color: #007bff;
+    /* Change color on hover */
+}

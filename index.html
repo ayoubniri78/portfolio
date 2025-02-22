@@ -1,63 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayoub NIRI | Software enginner</title>
     <link rel="stylesheet" href="hh.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
+
 <body>
     <header>
-       <nav class="navbar">
-        <div class="navdiv">
-            <!-- Logo à gauche -->
-            <div class="logo">
-                <a href="#">ELNIRI_DEV</a>
+        <nav class="navbar">
+            <div class="navdiv">
+                <!-- Logo à gauche -->
+                <div class="logo">
+                    <a href="#">ELNIRI_DEV</a>
+                </div>
+
+                <!-- Liste de navigation au centre -->
+                <ul class="navitem">
+                    <li><a href="#main">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
+                </ul>
+
+                <!-- Bouton à droite -->
+                <button>Let's talk</button>
             </div>
-
-            <!-- Liste de navigation au centre -->
-            <ul class="navitem">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-
-            <!-- Bouton à droite -->
-            <button>Let's talk</button>
+        </nav>
+    </header>
+    <section class="main">
+        <div>
+            <h2>
+                Hello i'm Ayoub
+            </h2>
+            <br>
+            <h3>
+                Software enginner | Linux Administrator
+            </h3>
+            <br>
+            <h4>
+                Building scalable solutions and optimizing system performance
+            </h4>
+            <br>
+            <button>
+                <a href="#projects">
+                    View my work
+                </a>
+            </button>
+            <br>
+            <br>
+            <div class="socialicon">
+                <a href="https://github.com/ayoubniri78" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ayoub-niri-03379a259/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/ayoubniri78"><i class="fab fa-twitter" target="_blank"></i></a>
+            </div>
         </div>
-    </nav>
-</header>
-<section class="main">
-    <div>
-        <h2>
-            Hello i'm Ayoub
-        </h2>
-        <br>
-        <h3>
-            Software enginner | Linux Administrator
-        </h3>
-        <br>
-        <h4>
-            Building scalable solutions and optimizing system performance
-        </h4>
-        <br>
-        <button>
-            <a href="#">
-                View my work
-            </a>
-        </button>
-        <br>
-        <br>
-        <div class="socialicon">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </div>
-</section>
+    </section>
 
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web development</h2>
+                <p>Building modern and high-performance web applications using technologies like spring boot,
+                    CodeIgniter, and Bootstrap. Experience in both frontend and backend development.</p>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-ubuntu"></i>
+                <h2>Linux administrtion</h2>
+                <p>Managing and maintaining Linux servers. Skilled in system administration, network configuration, and
+                    security.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Network administrtion</h2>
+                <p>Setting up and managing network infrastructures. Experience with protocols, virtualization, and
+                    cybersecurity</p>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="my-projects">
+            <div class="project">
+
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about-me">
+        <h2 class="title">About me</h2>
+        <p class="description">
+            I am Ayoub Niri, a Software Engineering student in my final year at the University of Science in Agadir. I
+            hold a BTS degree with honors in System Administration. I have two professional experiences: one as a
+            Software Developer at IBM Morocco and the other as a System Administrator at Dyna Info. I am currently
+            seeking an internship in the fields of Software Development or Linux Administration.
+        </p>
+        <a href="NIRI AYOUBcv.pdf" class="download-btn" download="Ayoub_Niri_CV" target="_blank">Download CV</a>
+        <div class="content">
+            <div class="contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>0657350485</p>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-inbox"></i>
+                <p><a href="mailto:someone@example.com">Ayoubniri78@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Ayoub Niri. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/ayoubniri78" target="_blank" class="social-icon">GitHub</a>
+                <a href="https://www.linkedin.com/in/ayoub-niri-03379a259/" target="_blank"
+                    class="social-icon">Linkedin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
